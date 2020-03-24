@@ -1,0 +1,118 @@
+/* CSS Document */
+@font-face{
+	font-family: "Milford";
+	src: url("../assets/fonts/Milford/MilfordCondensedBold-ldjw.ttf");
+}
+@font-face{
+	font-family: "Alegre";
+	src: url("../assets/fonts/Alegre_Sans/AlegreSans-Regular.ttf");
+}
+@font-face{
+	font-family: "Raleway";
+	src: url("../assets/fonts/Raleway/Raleway-Thin.ttf");
+}
+::-webkit-scrollbar{
+	display: none;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+ul{
+	list-style-type: none;
+}
+body{
+	margin: 0;
+	height: 100%;
+	background-color: whitesmoke;
+}
+
+#container{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 100%;
+	background-image: url("../assets/images/bhsummer00027.jpg");
+	background-size: 100%;
+}
+#subtitle-before{
+	position: absolute;
+	bottom: 220px;
+	font-family: Raleway;
+	color: whitesmoke;
+	font-size: 40px;
+	width: 340px;
+}
+#title{
+	position: absolute;
+	width: 300px;
+	height: 150px;
+	bottom: 60px;
+	left: 80px;
+}
+.title-letter{
+	font-family: Milford;
+	font-size: 80px;
+	color: whitesmoke;
+	line-height: 80%;
+	margin: 0px, 12px, 0px, 0px;
+	opacity: 0%;
+}
+@keyframes fadeInTitle{
+	0%{
+		opacity: 0%;
+	}
+	100%{
+		opacity: 100%;
+	}
+}
+
+#nav-container{
+	margin: auto;
+	padding-top: 30px;
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	animation-name: nav-drop;
+	animation-duration: 1s;
+	animation-delay: 3s;
+	animation-fill-mode: backwards;
+}
+.nav-item{
+	font-family: Alegre;
+	font-size: 30px;
+	text-transform: uppercase;
+	color: whitesmoke;
+}
+
+@keyframes nav-drop{
+	0%{ 
+		transform: translate(0px,-100px); 
+	}
+	100%{ 
+		transform: translate(0px,0px); 
+	}
+}
+
+#scroll-transition{
+	position: absolute;
+	background-color: whitesmoke;
+	height: 100%;
+	width: 100%;
+	transform: translate(0,1000px);
+}
+
+@keyframes scrollTransition{
+	0%{
+		transform: translate(0,1000px);
+	}
+	100%{
+		transform: translate(0,-1000px);
+	}
+}
+
+#map 
+{
+	height: 100%;
+}
